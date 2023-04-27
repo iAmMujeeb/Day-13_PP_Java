@@ -10,6 +10,10 @@ public class MaxGenMain {
         Float num5 = 20.5F;
         Float num6 = 30.5F;
         Float maxFloat = num4;
+        String str1 = "Apple";
+        String str2 = "Peach";
+        String str3 = "Banana";
+        String maxString = str1;
 
         if (num2.compareTo(maxInt)>0)
             maxInt = num2;
@@ -22,5 +26,11 @@ public class MaxGenMain {
         if (num6.compareTo(num5)>0)
             maxFloat = num6;
         System.out.println("Maximum Float Number = "+maxFloat);
+
+        if (str2.compareTo(maxString)>0)
+            maxString = str2;
+        if (str3.compareTo(str2)>0)
+            maxString = str3;
+        System.out.println("Maximum String is "+maxString);
     }
 }
